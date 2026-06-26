@@ -4,6 +4,6 @@ run abioInf.py
 
 run summaryMulti.py
 
-run sunFig.py
+run sumFig.py
 
 
