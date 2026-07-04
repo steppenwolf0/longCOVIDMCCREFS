@@ -49,9 +49,10 @@ from sklearn.preprocessing import StandardScaler
 # used for cross-validation
 from sklearn.model_selection import StratifiedKFold
 from sklearn.metrics import matthews_corrcoef
-# this is an incredibly useful function
+
 from pandas import read_csv
 import pandas as pd 
+
 def loadDatasetOriginal(run) :
 	
 	# data used for the predictions
@@ -179,11 +180,6 @@ def relativeFeatureImportance(classifier) :
 
 def featureSelection(globalIndex, variableSize,run, numberOfFolds) :
 	
-	# a few hard-coded values
-	#numberOfFolds = 10
-	
-	
-	# list of classifiers, selected on the basis of our previous paper "
 	classifierList = [
 			# ensemble
 			#[AdaBoostClassifier(), "AdaBoostClassifier"],
@@ -356,6 +352,7 @@ def featureSelection(globalIndex, variableSize,run, numberOfFolds) :
 			if tempIndex<numberOfTopFeatures:
 				fp.write( str(biomarkerNames[feature]) + "," + str(float(frequency/numberOfFolds)) + "\n")
 			tempIndex=tempIndex+1
+
 	globalAccuracy=globalAccuracy/8
 	return globalAccuracy
 

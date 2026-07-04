@@ -13,14 +13,7 @@ import collections
 
 from classifiersMulti import *
 
-# used for normalization
-from sklearn.preprocessing import  Normalizer
-from sklearn.preprocessing import StandardScaler
-from sklearn.preprocessing import MinMaxScaler
-# used for cross-validation
-from sklearn.model_selection import StratifiedKFold
 
-# this is an incredibly useful function
 from pandas import read_csv
 import matplotlib.pyplot as plt
 

@@ -54,7 +54,6 @@ from sklearn.model_selection import StratifiedKFold
 from sklearn.metrics import roc_curve, auc
 from numpy import interp
 import matplotlib.pyplot as plt
-# this is an incredibly useful function
 from pandas import read_csv
 
 from statsmodels.multivariate.manova import MANOVA
