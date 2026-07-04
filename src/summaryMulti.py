@@ -1,21 +1,15 @@
 # Script that makes use of more advanced feature selection techniques
 # by Alberto Tonda, 2017
 
-import copy
-import datetime
-import graphviz
-import logging
 import numpy as np
 import os
 import sys
 import pandas as pd 
-import collections
 
 from classifiersMulti import *
 
 
 from pandas import read_csv
-import matplotlib.pyplot as plt
 
 directory="data"
 numberOfFolds=10

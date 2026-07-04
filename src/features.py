@@ -3,7 +3,6 @@
 
 import copy
 import datetime
-import graphviz
 import logging
 import numpy as np
 import os
